@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>GSC 밀크&푸드 | NAVER SA · GFA Marketing Proposal</title>
+<meta name="description" content="GSC 밀크&푸드 네이버 SA · GFA 통합 마케팅 제안서">
+<style>
+:root{
+  --navy:#17324D; --blue:#2F6B8A; --mint:#CFE8DE; --green:#487C6C;
+  --cream:#F7F2E8; --ivory:#FFFDF8; --text:#18232D; --muted:#6D7882;
+  --line:#DDE5E8; --white:#fff; --shadow:0 18px 48px rgba(23,50,77,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Pretendard,"Noto Sans KR",Arial,sans-serif;color:var(--text);background:var(--ivory);line-height:1.55}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.91);backdrop-filter:blur(12px);border-bottom:1px solid rgba(221,229,232,.8)}
+.navin{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:-.5px;color:var(--navy)}
+.logo small{display:block;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--green)}
+.menu{display:flex;gap:20px;font-size:13px;color:var(--muted)}
+.hero{padding:88px 0 72px;background:
+radial-gradient(circle at 85% 10%,rgba(207,232,222,.9),transparent 27%),
+linear-gradient(135deg,#fffdf8 15%,#f8f3e8 100%)}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--green);text-transform:uppercase}
+h1{font-size:clamp(42px,7vw,78px);line-height:1.03;letter-spacing:-3px;margin:18px 0 22px;color:var(--navy);max-width:900px}
+.hero p{font-size:19px;color:#53616C;max-width:760px;margin:0}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:end}
+.hero-card{background:var(--navy);color:white;border-radius:26px;padding:28px;box-shadow:var(--shadow)}
+.hero-card .num{font-size:46px;font-weight:900;line-height:1}
+.hero-card p{font-size:14px;color:#D8E4EA;margin-top:12px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.badge{padding:10px 14px;border:1px solid #d8e4e3;border-radius:999px;background:rgba(255,255,255,.65);font-size:13px;font-weight:700;color:var(--navy)}
+section{padding:82px 0;border-top:1px solid #edf1f2}
+.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:34px}
+.kicker{color:var(--green);font-size:12px;font-weight:900;letter-spacing:1.8px}
+h2{font-size:38px;letter-spacing:-1.8px;line-height:1.15;margin:8px 0 0;color:var(--navy)}
+.section-head p{max-width:520px;color:var(--muted);margin:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 8px 28px rgba(23,50,77,.05)}
+.card .icon{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:var(--cream);font-size:20px}
+.card h3{font-size:20px;margin:18px 0 8px;color:var(--navy)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.hl{font-weight:800;color:var(--green)}
+.funnel{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}
+.stage{position:relative;border-radius:22px;padding:26px 22px;min-height:270px;color:white;overflow:hidden}
+.stage:after{content:"";position:absolute;right:-30px;bottom:-45px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.08)}
+.stage:nth-child(1){background:#27445D}.stage:nth-child(2){background:#35617C}.stage:nth-child(3){background:#4E7F7A}.stage:nth-child(4){background:#6B8F78}
+.stage .snum{opacity:.6;font-size:11px;font-weight:900;letter-spacing:2px}
+.stage h3{font-size:22px;margin:12px 0}
+.stage ul{padding-left:17px;margin:0;font-size:13px;color:#eef7f7}
+.stage li{margin:7px 0}
+.strategy{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{border-radius:26px;padding:30px;border:1px solid var(--line);background:#fff}
+.panel.sa{border-top:5px solid #1EC800}.panel.gfa{border-top:5px solid #172A3A}
+.panel h3{font-size:28px;margin:0;color:var(--navy)}
+.panel .sub{color:var(--muted);font-size:14px;margin:7px 0 22px}
+.row{display:grid;grid-template-columns:145px 1fr;gap:16px;padding:15px 0;border-top:1px dashed var(--line)}
+.row b{font-size:13px;color:var(--navy)}
+.row span{font-size:13px;color:#5d6973}
+.flow{background:var(--navy);color:white;border-radius:28px;padding:34px;margin-top:26px}
+.flow-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:center}
+.flow-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:18px;border-radius:18px;min-height:112px}
+.flow-box small{display:block;color:#9FBDC9;font-weight:800;margin-bottom:8px}
+.flow-box b{font-size:15px}
+.arrow{text-align:center;color:#A8C6CE;font-size:22px}
+.kw{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kwbox{background:white;border:1px solid var(--line);border-radius:18px;padding:20px}
+.kwbox h4{margin:0 0 12px;color:var(--navy)}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-size:12px;background:#f1f6f4;color:#456a61;border-radius:999px;padding:7px 10px}
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kpi .card{padding:24px}
+.kpi .v{font-size:30px;font-weight:900;color:var(--navy)}
+.kpi small{color:var(--muted)}
+.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.phase{background:white;border-radius:22px;padding:26px;border:1px solid var(--line)}
+.phase .month{font-size:12px;color:var(--green);font-weight:900}
+.phase h3{margin:8px 0 14px;color:var(--navy)}
+.phase ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px}
+.close{padding:92px 0;background:var(--navy);color:white;text-align:center}
+.close h2{color:white;font-size:46px}
+.close p{color:#BFD0D9;max-width:720px;margin:16px auto 0}
+.foot{font-size:11px;color:#8EA8B5;margin-top:38px}
+@media(max-width:900px){
+ .menu{display:none}.hero-grid,.strategy{grid-template-columns:1fr}.grid3,.kw,.kpi,.roadmap{grid-template-columns:1fr 1fr}
+ .funnel{grid-template-columns:1fr 1fr}.flow-grid{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}
+}
+@media(max-width:620px){
+ .wrap{padding:0 18px}.hero{padding-top:58px}h1{letter-spacing:-2px}
+ .grid3,.kw,.kpi,.roadmap,.funnel{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:14px}
+ .row{grid-template-columns:1fr;gap:4px}
+}
+@media print{
+ nav{display:none}section,.hero,.close{break-inside:avoid}.card,.panel,.stage{box-shadow:none}
+}
+</style>
+</head>
+<body>
+<nav>
+ <div class="wrap navin">
+  <div class="logo"><small>MARKETING PROPOSAL</small>GSC MILK&FOOD × LINKPRICE</div>
+  <div class="menu"><a href="#insight">INSIGHT</a><a href="#funnel">FUNNEL</a><a href="#sa">SA</a><a href="#gfa">GFA</a><a href="#operation">OPERATION</a></div>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow">NAVER PERFORMANCE MARKETING PROPOSAL</div>
+   <h1>좋은 우유를 찾는 순간부터<br>구매까지 연결합니다.</h1>
+   <p>GSC 밀크&푸드의 프리미엄 유제품과 식물성 음료를 중심으로, 검색 수요를 놓치지 않는 <b>SA</b>와 신규 수요를 만드는 <b>GFA</b>를 하나의 퍼널로 연결합니다.</p>
+   <div class="badges"><span class="badge">A2 저지우유</span><span class="badge">프리미엄 밀크</span><span class="badge">식물성 음료</span><span class="badge">홈카페 · F&B</span></div>
+  </div>
+  <div class="hero-card">
+   <div class="num">SA + GFA</div>
+   <p>검색 수요 포착 → 잠재고객 확장 → 상품 관심 → 리타겟팅 → 구매 전환까지 네이버 안에서 끊김 없이 설계</p>
+  </div>
+ </div>
+</header>
+
+<section id="insight">
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="kicker">01. MARKET OPPORTUNITY</div><h2>상품이 아니라<br>‘선택의 이유’를 광고합니다.</h2></div>
+   <p>프리미엄 우유는 일반적인 가격 경쟁보다 원료, 생산 방식, 맛, 활용성 등 구매 명분을 먼저 만드는 것이 중요합니다.</p>
+  </div>
+  <div class="grid3">
+   <div class="card"><div class="icon">🥛</div><h3>Premium Milk</h3><p><span class="hl">A2 · 저지우유</span>처럼 차별화 포인트가 명확한 상품은 탐색형 검색어와 콘텐츠형 소재를 함께 운영해 이해도를 높입니다.</p></div>
+   <div class="card"><div class="icon">🌿</div><h3>Plant-based</h3><p>오트밀크 등 식물성 음료 관심층에는 제품명 검색 이전 단계에서 <span class="hl">라이프스타일 기반 관심 신호</span>를 선점합니다.</p></div>
+   <div class="card"><div class="icon">☕</div><h3>Usage Expansion</h3><p>홈카페, 라떼, 디저트, 베이킹 등 <span class="hl">사용 장면 중심 메시지</span>로 카테고리 밖 신규 수요를 확장합니다.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="funnel" style="background:#F8FAF9">
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="kicker">02. FULL-FUNNEL DESIGN</div><h2>SA는 잡고,<br>GFA는 만듭니다.</h2></div>
+   <p>SA는 이미 발생한 검색 의도를 포착하고, GFA는 구매 가능성이 있는 신규 고객에게 먼저 브랜드와 상품의 이유를 보여줍니다.</p>
+  </div>
+  <div class="funnel">
+   <div class="stage"><div class="snum">STEP 01 · DISCOVERY</div><h3>인지 확대</h3><ul><li>GFA 인지도·트래픽</li><li>프리미엄 밀크 관심층</li><li>식물성·홈카페 관심층</li><li>USP 중심 짧은 메시지</li></ul></div>
+   <div class="stage"><div class="snum">STEP 02 · INTEREST</div><h3>관심 형성</h3><ul><li>제품/원료 차별점 전달</li><li>A2 · 저지우유 탐색 유도</li><li>콘텐츠 유입 고객 축적</li><li>소재 반응 데이터 확보</li></ul></div>
+   <div class="stage"><div class="snum">STEP 03 · INTENT</div><h3>검색 수요 포착</h3><ul><li>브랜드/상품 키워드 SA</li><li>카테고리/효능 니즈 키워드</li><li>경쟁·대체재 탐색 수요</li><li>쇼핑검색 연계</li></ul></div>
+   <div class="stage"><div class="snum">STEP 04 · CONVERSION</div><h3>전환 회수</h3><ul><li>GFA 리타겟팅</li><li>장바구니/방문자 재공략</li><li>구매 상품별 메시지 분리</li><li>ROAS 중심 재배분</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section id="sa">
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="kicker">03. NAVER SA</div><h2>검색어의 ‘의도’를<br>캠페인 구조로 분리합니다.</h2></div>
+   <p>브랜드명만 방어하는 SA가 아니라, 고객이 어떤 이유로 우유와 음료를 찾는지까지 키워드 그룹에 반영합니다.</p>
+  </div>
+  <div class="strategy">
+   <div class="panel sa">
+    <h3>SA 전략 구조</h3><div class="sub">전환 가능성에 따라 입찰가와 랜딩을 차등 운영</div>
+    <div class="row"><b>① 브랜드 방어</b><span>GSC 밀크앤푸드 / GSC 우유 / 제품명 / 브랜드 오탈자</span></div>
+    <div class="row"><b>② 상품 핵심</b><span>A2 우유 / 저지우유 / 프리미엄 우유 / 오트밀크 등</span></div>
+    <div class="row"><b>③ 니즈 확장</b><span>라떼용 우유 / 홈카페 우유 / 진한 우유 / 식물성 음료 등</span></div>
+    <div class="row"><b>④ 구매 전환</b><span>구매 / 가격 / 추천 / 배송 / 대용량 / 묶음 등 구매형 조합</span></div>
+    <div class="row"><b>⑤ 리포트 최적화</b><span>검색어 → 상품 → 전환가치 단위로 비효율 제거 및 확장</span></div>
+   </div>
+   <div>
+    <div class="kw">
+     <div class="kwbox"><h4>BRAND</h4><div class="tags"><span class="tag">GSC 밀크앤푸드</span><span class="tag">GSC 우유</span><span class="tag">저지데어리</span></div></div>
+     <div class="kwbox"><h4>PRODUCT</h4><div class="tags"><span class="tag">A2 저지우유</span><span class="tag">저지우유</span><span class="tag">오트밀크</span></div></div>
+     <div class="kwbox"><h4>NEED</h4><div class="tags"><span class="tag">프리미엄 우유</span><span class="tag">홈카페 우유</span><span class="tag">라떼용 우유</span></div></div>
+     <div class="kwbox"><h4>BUY</h4><div class="tags"><span class="tag">우유 추천</span><span class="tag">A2 우유 가격</span><span class="tag">우유 대용량</span></div></div>
+    </div>
+    <div class="flow">
+      <div class="flow-grid">
+       <div class="flow-box"><small>SEARCH</small><b>고객 검색어</b></div><div class="arrow">→</div>
+       <div class="flow-box"><small>MATCH</small><b>의도별 광고그룹</b></div><div class="arrow">→</div>
+       <div class="flow-box"><small>LANDING</small><b>상품별 최적 랜딩</b></div>
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="gfa" style="background:#F8FAF9">
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="kicker">04. NAVER GFA</div><h2>검색 전 고객을<br>먼저 발견합니다.</h2></div>
+   <p>GFA는 신규 고객 모수 확보와 리타겟팅을 동시에 수행합니다. 학습이 누적될수록 소재·타겟·상품 조합별 성과를 기준으로 예산을 이동합니다.</p>
+  </div>
+  <div class="strategy">
+   <div class="panel gfa">
+    <h3>GFA 전략 구조</h3><div class="sub">신규 고객 확보 → 관심고객 축적 → 전환 회수</div>
+    <div class="row"><b>① 인지도·트래픽</b><span>식품·카페·홈카페·프리미엄 식재료 관심층에 USP 노출</span></div>
+    <div class="row"><b>② 신규 모수 확장</b><span>반응 고객 시그널을 기반으로 유사 관심군을 지속 확대</span></div>
+    <div class="row"><b>③ 리타겟팅</b><span>상품 상세 방문, 장바구니, 콘텐츠 반응 고객 재공략</span></div>
+    <div class="row"><b>④ 소재 체계</b><span>상품 USP형 / 사용장면형 / 혜택형 / 후기·신뢰형으로 분리 테스트</span></div>
+    <div class="row"><b>⑤ 전환 최적화</b><span>CTR이 아닌 구매·매출 기여 기준으로 소재와 타겟을 평가</span></div>
+   </div>
+   <div class="grid3" style="grid-template-columns:1fr 1fr">
+    <div class="card"><div class="icon">01</div><h3>USP 소재</h3><p>A2, 저지우유, 원료와 풍미 등 상품을 선택해야 하는 이유를 짧게 전달.</p></div>
+    <div class="card"><div class="icon">02</div><h3>Usage 소재</h3><p>라떼·시리얼·베이킹·디저트 등 실제 섭취 장면으로 사용 니즈 확장.</p></div>
+    <div class="card"><div class="icon">03</div><h3>Offer 소재</h3><p>세트, 배송, 기간 한정 혜택 등 구매 결정에 필요한 마지막 이유 제공.</p></div>
+    <div class="card"><div class="icon">04</div><h3>Retarget</h3><p>방문자와 장바구니 고객에는 신규 설명보다 구매 CTA를 더 강하게 노출.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="kicker">05. SA × GFA CONNECT</div><h2>매체가 아니라<br>고객 행동을 연결합니다.</h2></div>
+   <p>GFA에서 브랜드를 본 고객이 네이버에서 다시 검색할 수 있고, SA 유입자가 바로 구매하지 않아도 GFA로 다시 만날 수 있습니다.</p>
+  </div>
+  <div class="flow">
+   <div class="flow-grid">
+    <div class="flow-box"><small>01 · GFA</small><b>신규 관심고객 확보</b></div>
+    <div class="arrow">→</div>
+    <div class="flow-box"><small>02 · SEARCH</small><b>브랜드·상품 검색 증가</b></div>
+    <div class="arrow">→</div>
+    <div class="flow-box"><small>03 · SA</small><b>검색 의도 기반 유입</b></div>
+   </div>
+   <div class="flow-grid" style="margin-top:10px">
+    <div class="flow-box"><small>06 · SCALE</small><b>고효율 타겟·상품 확장</b></div>
+    <div class="arrow">←</div>
+    <div class="flow-box"><small>05 · GFA RETARGET</small><b>미구매 고객 재접촉</b></div>
+    <div class="arrow">←</div>
+    <div class="flow-box"><small>04 · SITE</small><b>상품 탐색 / 장바구니</b></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="operation" style="background:#F8FAF9">
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="kicker">06. KPI & OPERATION</div><h2>클릭보다<br>매출에 가까운 지표를 봅니다.</h2></div>
+   <p>매체 KPI와 비즈니스 KPI를 분리하지 않고, 상품군별 전환 기여를 중심으로 주 단위 최적화합니다.</p>
+  </div>
+  <div class="kpi">
+   <div class="card"><small>SA</small><div class="v">CPC · CVR</div><p>검색 수요 포착 효율</p></div>
+   <div class="card"><small>GFA</small><div class="v">CTR · CPA</div><p>신규 유입·전환 효율</p></div>
+   <div class="card"><small>BUSINESS</small><div class="v">ROAS</div><p>상품별 매출 기여도</p></div>
+   <div class="card"><small>FUNNEL</small><div class="v">NEW %</div><p>신규 고객 비중</p></div>
+  </div>
+  <div class="roadmap" style="margin-top:24px">
+   <div class="phase"><div class="month">PHASE 01 · 1~2W</div><h3>탐색 & 학습</h3><ul><li>키워드 구조 세분화</li><li>GFA 타겟·소재 A/B</li><li>전환 추적 정상화</li></ul></div>
+   <div class="phase"><div class="month">PHASE 02 · 3~6W</div><h3>효율 집중</h3><ul><li>저효율 검색어 제외</li><li>고효율 타겟 예산 증액</li><li>상품별 랜딩 개선</li></ul></div>
+   <div class="phase"><div class="month">PHASE 03 · 7W~</div><h3>확장 & 고도화</h3><ul><li>신규 카테고리 수요 확장</li><li>리타겟팅 세분화</li><li>SA↔GFA 시너지 분석</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="kicker">07. CREATIVE DIRECTION</div><h2>소재는 ‘우유 사진’이 아니라<br>구매 이유를 보여줘야 합니다.</h2></div>
+   <p>GSC 밀크&푸드의 상품 차별점을 한 장에 하나씩 분명하게 보여주는 소재 운영을 권장합니다.</p>
+  </div>
+  <div class="grid3">
+   <div class="card"><div class="icon">A</div><h3>A2 / Jersey Focus</h3><p><b>“어떤 우유인지”</b>를 가장 먼저 이해시키는 상품 중심 소재. 패키지와 핵심 USP를 간결하게.</p></div>
+   <div class="card"><div class="icon">B</div><h3>Moment Focus</h3><p><b>“언제 마시는지”</b>를 보여주는 홈카페·브런치·시리얼·베이킹 라이프스타일 소재.</p></div>
+   <div class="card"><div class="icon">C</div><h3>Conversion Focus</h3><p><b>“왜 지금 사야 하는지”</b>를 보여주는 세트·할인·배송·기간 한정 메시지.</p></div>
+  </div>
+ </div>
+</section>
+
+<div class="close">
+ <div class="wrap">
+  <div class="kicker" style="color:#A8C6CE">GSC MILK&FOOD × LINKPRICE</div>
+  <h2>발견에서 구매까지,<br>하나의 퍼널로 연결합니다.</h2>
+  <p>네이버 SA로 이미 존재하는 수요를 정교하게 포착하고, GFA로 새로운 수요를 만들어 GSC 밀크&푸드의 지속 가능한 매출 성장을 설계합니다.</p>
+  <div class="foot">Marketing Proposal · 2026 · LINKPRICE</div>
+ </div>
+</div>
+</body>
+</html>
